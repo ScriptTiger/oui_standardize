@@ -61,7 +61,7 @@ func main() {
 	for _, line := range data {
 		fields := strings.Split(line, "\x00")
 		os.Stdout.WriteString(
-			"{"+fields[1]+"}{"+fields[0]+"}{"+fields[2]+"}{"+fields[3]+"}"+eol)
+			"{"+fields[1]+"}{"+fields[0]+"}{"+fields[2]+"}{"+fields[3]+"}"+EOL)
 	}
 
 }
